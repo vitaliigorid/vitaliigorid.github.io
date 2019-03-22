@@ -1,0 +1,116 @@
+@import 'reset';
+@import 'normalize';
+@import 'fonts';
+@import 'var';
+
+*,*:before,*:after{
+    box-sizing:border-box;
+}
+body{
+   font-family:$play;
+   background-color:#222;
+}
+.wrapper{
+    width:900px;
+    min-height:100vh;
+    margin:0 auto;
+    background-color:$white;
+    padding:0 20px 20px;
+    display:flex;
+}
+.left-sidebar{
+    width:35%;
+    min-height:100vh;
+    background-color:#222;
+    padding:20px;
+    box-shadow:inset 0 0 15px $black;
+}
+.right-sidebar{
+    width:65%;
+    padding:20px;
+}
+.photo{
+    width:200px;
+    height:200px;
+    margin:20px auto;
+    border-radius:50%;
+    border:10px solid $main;
+    background-image:url('../imgs/author.png');
+}
+.subtitle{
+    width:105%;
+    height:26px;
+    background-color:$main;
+    margin-left:-30px;
+    padding:0 30px;
+    color:$white;
+    font-size:22px;
+    letter-spacing: 2px;
+    text-shadow:4px 0 5px rgba(0,0,0,.25);
+}
+.text{
+    color:$grey;
+    font-size:18px;
+    padding:20px 0 20px 20px;
+    &_right-block{
+        color:$black;
+        padding-left:20px;
+    }
+}
+.skills-container{
+    width:100%;
+    color:$grey;
+    font-size:18px;
+    padding:20px 0 20px 20px; 
+    display:flex;
+}
+.scale-box{
+    padding-left:20px;
+}
+.scale{
+    &__point{
+        display:inline-block;
+        width:12px;
+        height:12px;
+        border-radius:50%;
+        border:1px solid $grey;
+    }
+    &__point_fill{
+        background-color:$grey;
+    }
+    &__point_animated{
+        animation:3s blink infinite linear;
+    }
+}
+@keyframes blink{
+    0%{
+        background-color:none;
+    }
+    50%{
+        background-color:$grey;
+        opacity:.5;
+    }
+    100%{
+        background-color:none;
+    }
+}
+.text-title{
+    font-weight:bold;
+    position:relative;
+    left:-20px;
+}
+.title{
+    padding:20px 0;
+}
+.links{
+    &__item{
+        text-decoration:none;
+        color:$black;
+        padding:10px 0 0 20px;
+        font-size:18px;
+        display:block;
+    }
+    &__item:hover{
+        color:$main;
+    }
+}
