@@ -228,7 +228,7 @@ body {
 .photo {
   width: 200px;
   height: 200px;
-  margin: 20px auto;
+  margin: 20px auto 40px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   border: 10px solid #2DC4C4;
@@ -305,7 +305,12 @@ body {
   left: -20px; }
 
 .title {
-  padding: 20px 0; }
+  padding: 20px 0 5px; }
+
+.aim {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0 0 10px 2px; }
 
 .links__item {
   text-decoration: none;
